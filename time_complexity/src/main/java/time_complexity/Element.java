@@ -37,6 +37,13 @@ class GFG1{
 // Time Complexity: O(log2(n))
 // Auxiliary Space: O(1)
 
+// In the above code, the loop iterates as long as i is less than or equal to n, and in each iteration, 
+// i is multiplied by 2. This loop structure makes i double in each iteration. The loop will execute until i becomes greater than n.
+// The time complexity of this code is indeed O(log2(n)), as the loop executes roughly log2(n) times. 
+// The reason is that i starts at 1 and doubles in each iteration until it exceeds n. In other words, 
+// it takes log2(n) iterations for i to become greater than n.
+// The auxiliary space complexity is O(1) because the memory usage of the program doesn't depend on the input size n.
+
 class GFG2{
     public static void main(String[] args){
         int i, n=8;
@@ -49,3 +56,10 @@ class GFG2{
 
 // Time Complexity: O(log(log n))
 // Auxiliary Space: O(1)
+
+// In the above code, the loop iterates as long as i is less than or equal to n, and in each iteration, 
+// i is set to the result of raising it to the power of 2. This loop structure makes i grow exponentially in each iteration.
+// The time complexity of this code is indeed O(log(log n)). The reason is that i grows exponentially, 
+// and it will take log(log n) iterations for i to exceed n. This is because in each iteration, i is squared, 
+// and it takes log n iterations for i to grow larger than n, and then you take the log again, which results in log(log n).
+// The auxiliary space complexity is O(1) because the memory usage of the program doesn't depend on the input size n.
